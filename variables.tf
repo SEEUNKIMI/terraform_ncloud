@@ -1,6 +1,11 @@
 # variable "ncloud_version" {
 #     type = string
 # }
+
+variable "zone" {
+    description = "default ncloud zone"
+    type = string
+}
 variable "vpc_cidr" {
     description = "cidr block for vpc"
     type = string
@@ -21,3 +26,4 @@ variable "subnets" {
         usage_type = string
     }))
 }
+
